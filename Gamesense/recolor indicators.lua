@@ -1,4 +1,4 @@
-local ui = _G["ui"] -- referencing globals cuz if i dont vscode gives me warnings and warnings are ugly
+local ui = _G["ui"] -- localizing globals cuz if i dont vscode gives me warnings and warnings are ugly
 local ui_new_checkbox, ui_new_color_picker, ui_get, ui_set_callback = ui.new_checkbox, ui.new_color_picker, ui.get, ui.set_callback
 local renderer = _G["renderer"]
 local renderer_gradient, renderer_text, renderer_measure_text = renderer.gradient, renderer.text, renderer.measure_text
