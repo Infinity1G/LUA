@@ -36,7 +36,7 @@ local function on_indicator(e)
 end
 
 local function handle_callbacks()
-    local event_callback = ui.get(override) and client_set_event_callback or client_unset_event_callback
+    local event_callback = ui_get(override) and client_set_event_callback or client_unset_event_callback
 
     event_callback("paint", on_paint)
     event_callback("indicator", on_indicator)
